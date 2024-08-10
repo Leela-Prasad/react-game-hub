@@ -14,7 +14,7 @@ function Emoji({ rating }: Props) {
     5: { src: bullsEye, alt: "exceptional", boxSize: "35px" },
   };
 
-  if (rating < 3) return;
+  if (rating < 3) return null;
 
   return <Image {...emojiMap[rating]} marginTop={1} />;
 }
